@@ -8,6 +8,7 @@ fn main(
 ) {
     let address = ecrecover::ecrecover(pub_key_x, pub_key_y, signature, hashed_message);
     assert(address == expected_address, "Address does not match the expected address");
+    // Unsafe
 }
 
 // #[test]
